@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="framenova-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121520"/>
+      <stop offset="100%" stop-color="#0B0D13"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background with Safe Margin -->
+  <rect width="512" height="512" rx="112" fill="url(#bg-grad)"/>
+  <rect x="24" y="24" width="464" height="464" rx="96" stroke="#8B5CF6" stroke-opacity="0.25" stroke-width="4"/>
+  
+  <!-- Outer Film/Frame corners -->
+  <path d="M128 176V144C128 135.163 135.163 128 144 128H176" stroke="url(#framenova-grad)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M384 176V144C384 135.163 376.837 128 368 128H336" stroke="url(#framenova-grad)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M128 336V368C128 376.837 135.163 384 144 384H176" stroke="url(#framenova-grad)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M384 336V368C384 376.837 376.837 384 368 384H336" stroke="url(#framenova-grad)" stroke-width="14" stroke-linecap="round"/>
+  
+  <!-- Central Video Play / Spark Nova Symbol -->
+  <g filter="url(#glow)">
+    <polygon points="216,192 344,256 216,320" fill="url(#framenova-grad)"/>
+  </g>
+  <circle cx="344" cy="192" r="14" fill="#06B6D4"/>
+  <circle cx="168" cy="320" r="10" fill="#8B5CF6"/>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "FrameNova AI",
+  "description": "One Video. Endless Possibilities. Professional AI video clipping, smart reframing, highlight detection, captions, and editing studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
